@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="290" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="MovieHound" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="299"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEp-v5-p6m">
+                        <rect key="frame" x="8" y="11" width="84" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year Released" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Y-by-qtg">
+                        <rect key="frame" x="8" y="40" width="109" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Rating" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmQ-kL-LkU">
+                        <rect key="frame" x="8" y="69" width="99" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V5Z-8Z-omH">
+                        <rect key="frame" x="8" y="98" width="284" height="193"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V5Z-8Z-omH" firstAttribute="top" secondItem="zmQ-kL-LkU" secondAttribute="bottom" constant="8" id="E1M-yr-onI"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="hEp-v5-p6m" secondAttribute="leading" id="Ht4-hT-pqW"/>
+                    <constraint firstItem="V5Z-8Z-omH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="KsI-d1-b89"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="zmQ-kL-LkU" secondAttribute="leading" id="LZL-hG-cLp"/>
+                    <constraint firstItem="Z9Y-by-qtg" firstAttribute="top" secondItem="hEp-v5-p6m" secondAttribute="bottom" constant="8" id="TxD-tv-6eY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="V5Z-8Z-omH" secondAttribute="bottom" id="URa-vK-oj2"/>
+                    <constraint firstItem="zmQ-kL-LkU" firstAttribute="top" secondItem="Z9Y-by-qtg" secondAttribute="bottom" constant="8" id="Upj-EO-hxV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="V5Z-8Z-omH" secondAttribute="bottom" id="VXQ-S6-UFd"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Z9Y-by-qtg" secondAttribute="leading" id="b1G-PZ-6nT"/>
+                    <constraint firstItem="zmQ-kL-LkU" firstAttribute="leading" secondItem="V5Z-8Z-omH" secondAttribute="trailing" constant="-255" id="cdV-en-2JK"/>
+                    <constraint firstItem="hEp-v5-p6m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="eFY-A8-yRV"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="V5Z-8Z-omH" secondAttribute="leading" id="kCr-1w-53x"/>
+                    <constraint firstItem="V5Z-8Z-omH" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="kSF-ge-PPN"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="V5Z-8Z-omH" secondAttribute="leading" id="qsY-a9-MZk"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="V5Z-8Z-omH" secondAttribute="leading" id="seW-SF-aBJ"/>
+                    <constraint firstItem="V5Z-8Z-omH" firstAttribute="top" secondItem="zmQ-kL-LkU" secondAttribute="bottom" constant="8" id="xpg-wS-4AF"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="cdV-en-2JK"/>
+                        <exclude reference="E1M-yr-onI"/>
+                        <exclude reference="URa-vK-oj2"/>
+                        <exclude reference="VXQ-S6-UFd"/>
+                        <exclude reference="kCr-1w-53x"/>
+                        <exclude reference="qsY-a9-MZk"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MovieRatingLabel" destination="zmQ-kL-LkU" id="ll8-mR-AUr"/>
+                <outlet property="MovieTitleLabel" destination="hEp-v5-p6m" id="q1o-b1-A6o"/>
+                <outlet property="YearReleasedLabel" destination="Z9Y-by-qtg" id="dkE-wu-aNH"/>
+                <outlet property="posterImageView" destination="V5Z-8Z-omH" id="pC3-sv-QJ2"/>
+            </connections>
+            <point key="canvasLocation" x="324" y="284"/>
+        </tableViewCell>
+    </objects>
+</document>
